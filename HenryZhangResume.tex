@@ -1,0 +1,183 @@
+\documentclass[11pt]{article}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.3in]{geometry}
+\usepackage{setspace}
+\usepackage{soul}
+\usepackage{hyperref}	
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\usepackage[dvipsnames]{xcolor}
+% \usepackage[sfdefault,extralight]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+% \usepackage[T1]{fontenc}
+% \renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
+\usepackage[sfdefault,light,condensed]{roboto}  %% Option 'sfdefault' only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+\def \prim {MidnightBlue}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=\prim,
+    filecolor=magenta,      
+    urlcolor=\prim
+    }
+
+\def \linkedinicon {\faLinkedinSquare}
+\def \githubicon {\faGithubSquare}
+\def \link {\faLink}
+\def \phone {\faMobile}
+\def \email {\faEnvelope}
+\def \skills {\faGears}
+\def \projects {\faLightbulbO}
+\def \education {\faGraduationCap}
+\def \work {\faBriefcase}
+\begin{document}
+\color{\prim}
+\sffamily
+\noindent
+\begin{center}
+\Huge
+\textbf{Henry Zhang}\\[5pt]
+\normalsize
+\noindent
+\small
+\phone\space\space +1-647-971-0788 \space\space\space\email\space\space\href{mailto:h783zhan@uwaterloo.ca}{h783zhan@uwaterloo.ca}\space\space\space\linkedinicon\space\space\href{https://linkedin.com/in/henry-zhang-476217176}{hz757}\space\space\space\githubicon\space\space\href{https://github.com/hz757}{hz757}\space\space\space\link\space\space\href{https://henryz.dev/}{henryz.dev}
+\end{center}
+\normalsize
+\noindent
+\color{\prim}
+\large  \\
+\space\textbf{EDUCATION}
+\normalsize
+\vspace{1.1pt}
+\hrule
+\color{Black}
+\medskip
+\noindent 
+\textbf{University of Waterloo}\hfill Waterloo, ON \\
+Honours Bachelor of Computer Science (Co-op) \hfill Sep 2020 - Apr 2024 \\
+Relevant Coursework: Object Oriented Programming, Data Structures, Algorithms, Operating Systems \\
+\noindent
+\color{\prim}
+\large \\
+\space\textbf{WORK EXPERIENCE}
+\normalsize
+\vspace{1.1pt}
+\hrule
+\color{Black}
+\medskip
+\noindent\textbf{Microsoft} \hfill Vancouver, BC \\
+Software Engineer Intern \hfill Jun 2022 - Sep 2022
+\begin{itemize}[noitemsep, topsep=2pt, parsep=2pt]
+\item
+Developed Latency, Reliability and Availability Telemetry and dashboards for Outlook using C\# and the ASP.NET framework.
+\item
+Collected GraphQL error info of API endpoints serving over 350 million users using Azure Application Insights Telemetry.
+\item
+Reduced noise on existing reliability monitors for GraphQL and JSON Endpoints by 98.8\% after adding error categorization.
+\item
+Cut loading time by 90\% on existing Jarvis Dashboards by creating pre-aggregate functions to replace database queries.
+\item
+Implemented latency tracers using the .NET ITracer Interface to track latency of internal API Gateway operations \\
+\end{itemize} 
+\noindent\textbf{Arctic Wolf} \hfill Waterloo, ON\\
+Software Developer Intern \hfill Jan 2022 - Apr 2022
+\begin{itemize}[noitemsep, topsep=2pt, parsep=2pt]
+\item
+Eliminated security gaps by developing a data cross-referencing service to identify and classify client devices using Elasticsearch.
+\item
+Shortened onboarding process for new enterprise customers and increased security coverage by developing Python scripts for automating onboarding workflow tasks.
+\item
+Built customizable report generation template for security metrics using Django. \\
+\end{itemize}
+\noindent\textbf{University of Waterloo} \hfill Waterloo, ON\\
+Software Developer Intern \hfill May 2021 - Aug 2021
+\begin{itemize}[noitemsep, topsep=2pt, parsep=2pt]
+\item
+Designed and developed Secure File Sharing web application allowing users to share files with a key that is not reused or stored.
+\item
+Deployed web app and real-time database using Firebase and node.js and integrating Google Drive API and Microsoft Graph API.
+\item
+Implemented APIs for file sharing and account maintenance features using Express.js.
+\item
+Added support for the file sharing service to support file sharing using Google Drive and Microsoft OneDrive.
+\end{itemize}
+\color{\prim}
+\noindent
+\large \\
+\noindent\space\textbf{PROJECTS}
+\normalsize
+\vspace{1.1pt}
+\hrule
+\color{Black}
+\medskip
+\noindent
+\textbf{Stock Market Sentiment Analysis} \hfill \\
+\link\space\href{https://sentiment-index.netlify.app/}{sentiment-index.netlify.app} \\
+Tech Stack: TypeScript, React, MongoDB Atlas, co:here NLP, Heroku, Redis, Netlify CMS, Chart.js 
+\begin{itemize}[noitemsep, topsep=2pt, parsep=2pt]
+\item
+Constructed model measuring market sentiment using co:here natural language processing APIs on media articles and reddit posts
+\item
+Created customizable data visualization of market sentiment over time using Chart.js \\
+\end{itemize}
+\textbf{CourierU} \hfill\\
+\link\space\href{https://courieru.herokuapp.com/index.html}{courieru.herokuapp.com} \\
+Tech Stack: MongoDB Atlas, Bootstrap, Mapbox, Radar.io, JavaScript, git, Node.js
+\color{Black}
+\begin{itemize}[noitemsep, topsep=2pt, parsep=2pt]
+\item
+Engineered a service for foodbanks to coordinate deliveries to those in need during the COVID-19 Pandemic by
+receiving requests and then mapping out efficient delivery routes for drivers
+\item
+Featured in the MLH blog: \href{https://stories.mlh.io/5-awesome-hacks-you-can-make-with-radar-1b3f76dc7ea9}{stories.mlh.io/5-awesome-hacks-you-can-make-with-radar-1b3f76dc7ea9} 
+\end{itemize}
+\color{\prim}
+\noindent
+\large \\
+\space\textbf{TECHNICAL SKILLS}
+\normalsize
+\vspace{1.2pt}
+\hrule
+\color{Black}
+\begin{itemize}[noitemsep, topsep=2pt, parsep=2pt]
+\item
+\textbf{Languages:} Python, C\# JavaScript, TypeScript, C++, C, SQL, GraphQL, HTML, CSS
+\item
+\textbf{Framworks and Libraries:} .NET, Node.js, Express.js, Next.js, React.js, Vue.js, jQuery, Tailwind, NumPy, Electron, Flask
+\item
+\textbf{Databases:} MongoDB, Firebase, SQL, KQL
+\item
+\textbf{Tools and Technologies:} Git, Docker, JIRA, Azure DevOps,  NetlifyCMS, Vercel, Postman, Linux, Jenkins, AWS, Microsoft Azure
+\end{itemize}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
